@@ -1,0 +1,11 @@
+<h1>Long Word</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<form action="{% url 'game:submissionForm' %}" method="post">
+
+{% csrf_token %}
+<input type="text" name="word" id="word" placeholder="Type the longest valid english word"  />
+<input type="submit" value="Submit" />
+
+</form>

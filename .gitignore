@@ -88,3 +88,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+# VI swap/undo files
+*.un~
+*.swp

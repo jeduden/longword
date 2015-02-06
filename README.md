@@ -4,7 +4,7 @@
 
     pip install -r requirements.txt
 
-if enchant library cannot be found, should be packaged with the install, but that didn't work on my OS-X system.
+if enchant library cannot be found ( should have been packaged with the install, but that didn't work on my OS-X system ) .
 
     OSX : brew install enchant 
     Linux ( Debian ) : apt-get install enchant

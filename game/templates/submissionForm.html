@@ -12,3 +12,19 @@
 <input type="submit" value="Submit" />
 
 </form>
+
+<table>
+	<thead>
+	<tr>
+		<th>User</th><th>Score</th><th>Word</th>
+	</tr>
+	</thead>
+	<tbody>
+	{% for entry in top10OfTheDay %}
+	<tr>
+		<td>{{entry.user}}</td><td>{{entry.score}}</td><td>{{entry.word}}</td>
+	</tr>
+	{% endfor %}
+	</tbody>
+</table>
+

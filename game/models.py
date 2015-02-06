@@ -18,3 +18,4 @@ class WordSubmission(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL)
     word = models.TextField()
     score = models.IntegerField()
+    submitted = models.DateField(auto_now_add=True)

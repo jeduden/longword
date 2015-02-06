@@ -8,6 +8,10 @@ if enchant library cannot be found, should be packaged with the install, but tha
 
     OSX : brew install enchant 
     Linux ( Debian ) : apt-get install enchant
+    Amamzon Linux:
+    - yum install enchant
+    - yum install enchant-aspell
+    - yum install aspell-en 
 
 ### Minimal tasks to setup the server
 
@@ -21,7 +25,7 @@ Run unittests
 
 Setup Admin user
 
-    python manaye.py createsuperuser 
+    python manage.py createsuperuser 
 
 Run server
 

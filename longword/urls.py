@@ -5,6 +5,7 @@ from game import views
 
 urlpatterns = patterns('',
     url(r'',include('game.urls',namespace='game')),
-    url(r'^admin/', include(admin.site.urls))
+    url(r'^admin/', include(admin.site.urls)),
+    url(r'^accounts/login/?$', 'django.contrib.auth.views.login',{'template_name': 'login.html'})
 )
 

@@ -101,3 +101,7 @@ The enchant dictionary to check if a word is valid english was found via the goo
 It seems to fit the requirements. The dependency issues are a bit worrying. In a real production environment I would probably look for alternatives,
 that are more predictable during the installation process.
 
+### Highscoring
+
+Currently, highscores are also displayed when the score is equal the highest score. Depending on the user experience one might want to change that. 
+

@@ -15,7 +15,7 @@ if enchant library cannot be found ( should have been packaged with the install,
 
 ### Minimal tasks to setup the server
 
-Setup initialize the DB
+Initialize the DB
 
     python manage.py migrate
 
@@ -42,7 +42,7 @@ Test site by logging in as one of the sample users at the root: http://127.0.0.1
 
 ### Database Selection
 
-The default database was chosen. It works out of the box and is simple to setup because it doesn't require it's own service.
+The default database (sqlite) was chosen. It works out of the box and is simple to setup because it doesn't require its own service.
 
 Most other databases (Postgres, Mysql, MongoDB, Redis, ... ) would also be potential candidates if the business case would have been more complex and the scaling 
 
@@ -50,14 +50,14 @@ or performance requirements stronger.
 
 ### UI
 
-The default template engine was chosen for speed purpose and the minimization of unknown gotchas. The tutorials for the default template engine are pretty good.
+The default template engine was chosen for implementation speed purposes and the minimization of unknown gotchas. The tutorials for the default template engine are pretty good.
 
 ## Scaling
 
 Since I know that the user base is currently limited and I only have limited time, 
 I didn't investigate scaling issues. However, if the business case requires it i would start doing the following: 
 
-Load testing simulating the common use cases at scale should be setup to identify the bottle necks of the application.
+Load testing, simulating the common use cases at scale, should be setup to identify the bottle necks of the application.
 
 Parameters currently to look at scale would be:
 
@@ -66,7 +66,7 @@ Parameters currently to look at scale would be:
 
 The work to make the product scale should be focused on the identified bottle necks.
 
-### Potential bottleneck if number of users grows
+### Example of a potential bottleneck if number of users grows
 
 The html is dynamically generated, this can be a concern at scale. 
 

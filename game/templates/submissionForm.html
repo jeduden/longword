@@ -1,6 +1,6 @@
 <h1>Long Word</h1>
 
-{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+{% if word != None and score < 0 %}<p><strong>'{{ word }}' was not valid. Try again.</strong></p>{% endif %}
 
 <form action="{% url 'game:submissionForm' %}" method="post">
 

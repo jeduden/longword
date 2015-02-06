@@ -1,6 +1,9 @@
 <h1>Long Word</h1>
 
 {% if word != None and score < 0 %}<p><strong>'{{ word }}' was not valid. Try again.</strong></p>{% endif %}
+{% if word != None and score > 0 %}<p><strong>'{{ word }}' valid. Score {{score}}.</strong></p>{% endif %}
+{% if personal_highscore == score %}<p><strong>Personal Highscore</strong></p>{% endif %}
+{% if overall_highscore == score %}<p><strong>Overall Highscore</strong></p>{% endif %}
 
 <form action="{% url 'game:submissionForm' %}" method="post">
 
